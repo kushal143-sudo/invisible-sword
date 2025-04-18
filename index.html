@@ -9,9 +9,14 @@
   <style>
     body { font-family: 'Playfair Display', serif; background-color: #0f172a; color: #f8fafc; }
     .fade-in { animation: fadeIn 2s ease-in-out; }
+    .slide-up { animation: slideUp 1.5s ease-in-out; }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(100px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -22,7 +27,7 @@
   </header>
 
   <section class="p-6 flex flex-col items-center">
-    <img src="book-cover.jpg" alt="Book Cover" class="rounded-xl shadow-2xl w-3/4 md:w-1/2 mb-8 fade-in">
+    <img src="book-cover.jpg" alt="Book Cover" class="rounded-xl shadow-2xl w-3/4 md:w-1/2 mb-8 slide-up">
     <h2 class="text-3xl font-semibold mb-4 fade-in">About the Book</h2>
     <p class="max-w-3xl text-center fade-in">
       <em>The Invisible Sword</em> is a gripping tale of destiny, courage, and ancient power. When a seemingly ordinary college student stumbles upon a mysterious glowing blade, he is thrust into a world of forgotten legends and dark forces that have long been buried in time. Haunted by visions of a past life and pursued by an ancient evil, he must uncover the truth about his identity and embrace his role in a war that never truly ended.
@@ -31,30 +36,42 @@
 
   <section class="p-6 bg-indigo-800 mt-10 fade-in">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl font-bold mb-4">About the Author</h2>
-      <p>Vishnu Siripuram is a passionate storyteller who blends mythology, fantasy, and emotion to create immersive fictional worlds. Through his writing, he brings forgotten legends to life for modern readers.</p>
+      <h2 class="text-2xl font-bold mb-4">Why Buy This Book?</h2>
+      <ul class="list-disc text-left max-w-2xl mx-auto space-y-2">
+        <li>Experience a unique blend of mythology, fantasy, and modern storytelling.</li>
+        <li>Engage with powerful characters on a journey of transformation and redemption.</li>
+        <li>Uncover ancient secrets, mystical powers, and a thrilling battle between good and evil.</li>
+        <li>Perfect for fans of fantasy epics, mythological thrillers, and inspiring hero tales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="p-6 bg-indigo-700 mt-10 fade-in">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Reader Reviews</h2>
+      <div class="space-y-6">
+        <blockquote class="italic">“A breathtaking story that keeps you hooked from page one. A must-read for fantasy lovers!”</blockquote>
+        <blockquote class="italic">“The concept is fresh and powerful. The Invisible Sword is more than a story—it's a journey.”</blockquote>
+        <blockquote class="italic">“It awakened my imagination and took me into a whole new world. Loved every moment!”</blockquote>
+      </div>
     </div>
   </section>
 
   <section class="p-6 text-center fade-in">
     <h2 class="text-2xl font-bold mb-4">Where to Buy</h2>
-    <p class="text-lg">Available soon on:</p>
-    <ul class="list-none mt-2 space-y-1">
-      <li>Amazon</li>
-      <li>Flipkart</li>
-      <li>Notion Press</li>
+    <p class="text-lg mb-4">Available now on:</p>
+    <ul class="list-none mt-2 space-y-2">
+      <li><a href="https://www.amazon.in/example-link" target="_blank" class="text-blue-400 hover:underline">Amazon</a></li>
+      <li><a href="https://www.flipkart.com/example-link" target="_blank" class="text-blue-400 hover:underline">Flipkart</a></li>
+      <li><a href="https://notionpress.com/example-link" target="_blank" class="text-blue-400 hover:underline">Notion Press</a></li>
     </ul>
   </section>
 
   <section class="p-6 bg-indigo-900 fade-in">
     <div class="max-w-md mx-auto text-center">
-      <h2 class="text-2xl font-bold mb-4">Contact the Author</h2>
-      <form action="https://formspree.io/f/mwkgnvgk" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded text-black">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded text-black">
-        <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-2 rounded text-black"></textarea>
-        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Send Message</button>
-      </form>
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p class="text-lg">Have questions or want to connect?</p>
+      <p>Email: <a href="mailto:theinvisiblesword55@gmail.com" class="text-blue-400 hover:underline">theinvisiblesword55@gmail.com</a></p>
     </div>
   </section>
 
